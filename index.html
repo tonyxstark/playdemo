@@ -1,171 +1,59 @@
-<html>
-<head>
-  <title><?php echo $title; ?> | Avishkar Patil</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.zee5.com/images/ZEE5_logo.svg">
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins|Quattrocento+Sans" rel="stylesheet"/>
-  <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
-</head>
-<style>
-html {
-  font-family: Poppins;
-  background: #000;
-  margin: 0;
-  padding: 0
-}
-.loading {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #000;
-        z-index: 9999;
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "https://www.wapforum.org/DTD/xhtml-mobile10.dtd"> <html xmlns="https://www.w3.org/1999/xhtml"><head>
+<title>ipldekh.xyz</title>
+<script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="9042"></script> <link rel="dns-prefetch" href="https://fastcdn.jdi5.com">
+<link rel="stylesheet" type="text/css" href="https://fastcdn.jdi5.com/css/net4wap.wapkiz.com/style.css" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="https://i2.extraimage.info/pix/2021/09/19/12882a7ac751483c5e411ba1d110962b.jpg">
+<link rel="icon" href="https://i2.extraimage.info/pix/2021/09/19/12882a7ac751483c5e411ba1d110962b.jpg">
+<link rel="shortcut icon" type="image/x-icon" href="https://i2.extraimage.info/pix/2021/09/19/12882a7ac751483c5e411ba1d110962b.jpg"> </head><body> <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="9042"></script> <script type='text/javascript' src='//creakversionfort.com/7b/c5/dd/7bc5dd23d632d2263a9b98d6c0d5b70d.js'></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46789381-39"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-46789381-39');
+  
+  document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
     }
-    
-    .loading-text {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-        width: 100%;
-        height: 100px;
-        line-height: 100px;
-    }
-    
-    .loading-text span {
-        display: inline-block;
-        margin: 0 5px;
-        color: #00b3ff;
-        font-family: 'Quattrocento Sans', sans-serif;
-    }
-    
-    .loading-text span:nth-child(1) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(2) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.2s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(3) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.4s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(4) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.6s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(5) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 0.8s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(6) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(7) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.2s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(8) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.4s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(9) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.6s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(10) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 1.8s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(11) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 2s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(12) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 2.2s infinite linear alternate;
-    }
-    
-    .loading-text span:nth-child(13) {
-        filter: blur(0px);
-        animation: blur-text 1.5s 2.4s infinite linear alternate;
-    }
-    
-    @keyframes blur-text {
-        0% {
-            filter: blur(0px);
-        }
-        100% {
-            filter: blur(4px);
-        }
-    }
-        .plyr__video-wrapper::before {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            z-index: 10;
-            content: '';
-            height: 35px;
-            width: 35px;
-            background: url('https://telegra.ph/file/22da4d29204c748a526a4.png') no-repeat;
-            background-size: 35px auto, auto;
-        }
-        
-            .plyr__video-wrapper::after {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 10;
-            content: '';
-            height: 35px;
-            width: 35px;
-            background: url('https://i.ibb.co/nRH5vb3/Zee5.png') no-repeat;
-            background-size: 35px auto, auto;
-        }
-</style>
-<body>
-  <div id="loading" class="loading">
-<div class="loading-text">
-        <span class="loading-text-words">A</span>
-        <span class="loading-text-words">V</span>
-        <span class="loading-text-words">I</span>
-        <span class="loading-text-words">S</span>
-        <span class="loading-text-words">H</span>
-        <span class="loading-text-words">K</span>
-        <span class="loading-text-words">A</span>
-        <span class="loading-text-words">R</span>
-</div>
-</div>
-<video controls crossorigin poster="<?php echo $image; ?>" playsinline>
-    <source type="application/x-mpegURL" src="http://watchindia.net:8880/live/33253/72963/1072.m3u8"> </video>
-</body>
+</script> <script src="//cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css">
+<center>
+<div style="max-width:640px; max-height: 480px;">
+<video id="player" poster="https://i2.extraimage.info/pix/2021/09/19/2eeaa8be0520676e068093fb2c53ff22.jpg" class="plyr" controls preload="metadata"><source src="https://cdnn.ipldekh.xyz/ipllive/480p.m3u8" type="application/x-mpegURL"></video></div></center>
 <script>
-  setTimeout(videovisible, 4000)
-function videovisible() {
-    document.getElementById('loading').style.display = 'none'
-}
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",()=> {
   const e = document.querySelector("video"),
     n = e.getElementsByTagName("source")[0].src,
     o = {};
@@ -192,5 +80,111 @@ document.addEventListener("DOMContentLoaded", () => {
     new Plyr(e, o)
   }
 });
+</script> </script></noscript></textarea></div></div></div><div style="display:none;"><center><script type="text/javascript" src="//counter.jdi5.com/online.js"></script><script type="text/javascript">online("b313a1db32825f005ab9b6110f25ca77");</script></center></div></title></style></font></iframe></script></noscript></textarea></div></div></div><br />
+<style type="text/css">
+.iC0f5ca8b06bf942090288e8382560a3181 {
+			position:fixed !important;
+			bottom:0px !important;
+			right: 0px !important;
+			background-color:#ffffff transparent !important;
+			width:100% !important;
+			z-index:2147483647 !important;
+			padding:2px !important;
+			margin:auto !important;
+			text-align:center !important;
+			float:none !important;
+			}
+			.iC0f5ca8b06bf942090288e8382560a3182 {
+			border: 1px #56aa71 solid !important;
+			background-color:#6edf5c !important;
+			width:80% !important;
+			padding:4px !important;
+			text-align:center !important;
+			margin:0 !important;
+			border-radius: 5px !important;
+			margin:auto !important;
+			text-align:center !important;
+			float:none !important;
+			position: relative;
+bottom: -25px;
+			}
+			.iC0f5ca8b06bf942090288e8382560a3181 a{
+			color:white !important;
+			text-decoration: none !important;
+			}
+			center {
+    visibility: visible !important;
+}
+.iC0f5ca8b06bf942090288e8382560a318close {display:none;
+position: fixed;
+right: 120px;
+width: 20px;
+height: 20px;
+opacity: 0.3;
+bottom: 50px;
+text-decoration: none;
+}
+.iC0f5ca8b06bf942090288e8382560a318close:hover {
+  opacity: 1;}
+.iC0f5ca8b06bf942090288e8382560a318close:before, .iC0f5ca8b06bf942090288e8382560a318close:after {position: fixed;left: 15px;height: 33px;width: 2px;}
+.iC0f5ca8b06bf942090288e8382560a318btnse1 {
+color: white;padding: 12px 30px;cursor: pointer;font-size: 20px;position: absolute;margin: 100px 0px 0px -105px;}
+.iC0f5ca8b06bf942090288e8382560a318bdr4{border: solid;background-color: #6edf5c ;border-radius: 5px;}</style>
+<script>
+	function dlcount(count,vtxt,text){
+	var count= count;
+	var text= text;
+	var vtxt= vtxt;
+    var countdownElement = document.getElementById(count),
+       
+        seconds = 10,
+        second = 0,
+        interval;
+   
+    interval = setInterval(function() {
+       // countdownElement.firstChild.data = "You can start your download in " + (seconds - second) + " seconds";
+		countdownElement.innerText=(vtxt+" " + (seconds - second) + " seconds");
+        if (second >= seconds) {
+           countdownElement.innerText=(text);
+            
+            clearInterval(interval);
+        }
+        second++;
+    }, 1000);
+}
 </script>
+<div id="iC0f5ca8b06bf942090288e8382560a3181d">
+<a id="iC0f5ca8b06bf942090288e8382560a318close" href="#iC0f5ca8b06bf942090288e8382560a318sam" class="iC0f5ca8b06bf942090288e8382560a318close" onclick="document.getElementById('iC0f5ca8b06bf942090288e8382560a3181d').style.display='none'; document.getElementById('iC0f5ca8b06bf942090288e8382560a318sam').style.display='block';
+dlcount('iC0f5ca8b06bf942090288e8382560a318vdl','Wait','Download Now');
+document.getElementById('iC0f5ca8b06bf942090288e8382560a318vdlif').src ='https://ad.jetx.info/red2.php?rand=iC0f5ca8b06bf942090288e8382560a318&id=2';">[x]</a>
+<div class="iC0f5ca8b06bf942090288e8382560a3181">
+<button class="iC0f5ca8b06bf942090288e8382560a3182">Download Now</button>
+<div style=" width:100%; opacity:0.0002;">
+<center><iframe id="iC0f5ca8b06bf942090288e8382560a3187" scrolling="no" style="width: 100%;
+height: 59px;
+margin: -18px;" class="lazyload" src="https://ad.jetx.info/red2.php?rand=iC0f5ca8b06bf942090288e8382560a318&id=27" frameborder="0" marginheight="0" marginwidth="0" replaced="true"><div class="iC0f5ca8b06bf942090288e8382560a3181"><a href="https://ad.jetx.info/red2.php?rand=iC0f5ca8b06bf942090288e8382560a318&id=12" rel="nofollow" target="_blank"><div class="iC0f5ca8b06bf942090288e8382560a3182"><b>DOWNLOAD NOW</b></div></a></div></iframe></center></div></div>
+</div>
+<center>
+<div style="width:300px;clear:both;"><div id="iC0f5ca8b06bf942090288e8382560a318sam" style="display:none;">
+<button id="iC0f5ca8b06bf942090288e8382560a318vdl" class="iC0f5ca8b06bf942090288e8382560a318btnse1 iC0f5ca8b06bf942090288e8382560a318bdr4"><i class="fa fa-download"></i>Please Wait</button>
+<center><div style="height:250px; width:100%; opacity:0.0002; position: relative;">
+<iframe scrolling="no" style="height:270px;" id="iC0f5ca8b06bf942090288e8382560a318vdlif" class="lazyload" src="#" frameborder="0" marginheight="0" marginwidth="0" replaced="true"></iframe></div></center></div></div></center>
+<script>
+    window.onload=function() {
+        document.getElementById("iC0f5ca8b06bf942090288e8382560a318close").style.display = 'block';
+    };</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46789381-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+  gtag('config', 'UA-46789381-15');
+gtag('set', {'content_group1': 'ipldekh.xyz'}); 
+gtag('event', 'ipldekh.xyz', {
+  'event_category' : 'ipldekh.xyz',
+  'event_label' : 'ipldekh.xyz'
+});
+</script>
+</body>
 </html>
+
